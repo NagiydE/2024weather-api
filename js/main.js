@@ -3,9 +3,10 @@ city_name: City name.
 description: Text weather description.
 
 */
+import { apiKey } from "./apikeys"
 
 document.querySelector('#realbutton').addEventListener('click', getTemperature)
-const apiKey = '0d50e678a6cf4bfc94d0b17d3a7d1f89'
+
 function getTemperature() {
     const city = document.querySelector('#city').value
     const country = document.querySelector('#country').value
